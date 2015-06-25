@@ -64,9 +64,12 @@
                   <li><%= link_to "Log in", login_path %></li>
                 <% end %>
                     
+                    
                     <li>
                         <a class="page-scroll" href="/about">About</a>
                     </li>
+                    
+                    <% if logged_in? %>
                     <li>
                         <a class="page-scroll" href="/explore">Explore</a>
                     </li>
@@ -76,6 +79,11 @@
                     <li>
                         <a class="page-scroll" href="/help">Help</a>
                     </li>
+                    <% else %>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                    <% end %>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

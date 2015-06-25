@@ -60,6 +60,8 @@
                     <li>
                         <a class="page-scroll" href="#">About</a>
                     </li>
+                    
+                    <% if logged_in? %>
                     <li>
                         <a class="page-scroll" href="/explore">Explore</a>
                     </li>
@@ -69,6 +71,11 @@
                     <li>
                         <a class="page-scroll" href="/help">Help</a>
                     </li>
+                    <% else %>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                    <% end %>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
