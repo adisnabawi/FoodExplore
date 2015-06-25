@@ -1,2 +1,10 @@
-<h1>StaticPages#help</h1>
-<p>Find me in app/views/static_pages/help.html.erb</p>
+<title> Help </title>
+<h1>Register your friends</h1>
+<p>To register your friends its easy. Just use this link and register it for them </p>
+<button class="btn btn-primary btn-xl page-scroll" onclick="myFriend()">Register your friends</button>
+
+<script>
+  function myFriend(){
+    window.location.href = 'http://foodexplore.herokuapp.com/users/new';
+  }
+</script>
