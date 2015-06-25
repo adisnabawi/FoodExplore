@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   get 'static_pages/explore'
 
   get 'static_pages/recipe'
+  get 'recipe' => 'static_pages#recipe'
 
   get 'static_pages/about'
   
