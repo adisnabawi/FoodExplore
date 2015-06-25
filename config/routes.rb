@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   get 'recipe' => 'static_pages#recipe'
 
   get 'static_pages/about'
+  get 'about' => 'static_pages#about'
   
   get 'logout' => 'sessions#destroy'
   
