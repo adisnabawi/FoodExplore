@@ -45,7 +45,7 @@
     -ms-animation: titleAnimation 18s linear infinite 0s;
 }
 .cb-slideshow li div h3 { 
-    font-family: Arial , sans-serif;
+    font-family: Arial;
     font-weight:bold;
     font-size: 100px;
     line-height: 100px; 
