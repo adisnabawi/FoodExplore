@@ -5,6 +5,7 @@ class SessionsController < ApplicationController
   def create
   user = User.find_by(email: params[:session][:email].downcase)
   if user && user.authenticate(params[:session][:password])
+  #BCrypt::Password.new(remember_digest).is_password?(remember_token)
   # Log the user in and redirect to the user's show page.
   log_in user
   redirect_to user
