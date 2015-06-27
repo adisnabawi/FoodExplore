@@ -1,3 +1,4 @@
+<title><%= @photo.title%></title>
 <p id="notice"><%= notice %></p>
 
 <div class="row">
@@ -6,7 +7,7 @@
   </div>
 
   <div class="col-xs-3">
-    <p><b>Title: </b><%= @photo.title%></p>
+    <p><b>Name: </b><%= @photo.title%></p>
     <p><b>Description: </b><%= @photo.description %></p>
     <p>
       <%= link_to 'Edit', edit_photo_path(@photo) %> |
