@@ -1,3 +1,4 @@
+<title>Login</title>
 <% provide(:title, "Log in") %>
 
 <h1>Log in</h1>
@@ -15,6 +16,7 @@
       <%= f.label :remember_me, class: "checkbox inline" do %>
       <%= f.check_box :remember_me %>
       <span>Remember me on this computer</span>
+      <br> New User? <a href="/users/new"> Register</a> now
       <% end %>
 
       <br>
